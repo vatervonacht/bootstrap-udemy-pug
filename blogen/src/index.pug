@@ -1,0 +1,84 @@
+doctype html  
+html(lang='en')  
+  head
+    // TODO - Meta and SEO stuff
+    title Make This A Configurable Title
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.text-white.p-0
+      .container
+        a(href="index.html").navbar-brand Blogen
+        button.navbar-toggler(data-toggle="collapse" data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarCollapse
+          ul.navbar-nav
+            li.navbar-item.px-2: a.nav-link.active(href="index.html") Home
+            li.navbar-item.px-2: a.nav-link(href="posts.html") Posts
+            li.navbar-item.px-2: a.nav-link(href="categories.html") Categories
+            li.navbar-item.px-2: a.nav-link(href="users.html") Users
+          ul.navbar-nav.ml-auto
+            li.navbar-item.dropdown.mr-3 
+              a.nav-link.dropdown-toggle(href="#" data-toggle="dropdown")
+                i.fas.fa-user 
+                span.p-2 Welcome Tim
+              .dropdown-menu
+                a(href="profile.html").dropdown-item
+                  i.fas.fa-user-circle 
+                  span.p-2 Profile
+                a(href="settings.html").dropdown-item
+                  i.fas.fa-cog         
+                  span.p-2 Settings
+            li.navbar-item: a(href="login.html").nav-link: i.fas.fa-user-times
+                
+    header#main-header.py-2.bg-primary.text-white
+      .container
+        .row
+          .col
+            h1 
+             i.fas.fa-cog
+             span.p-2 Dashboard
+
+    section#actions.mb-4.py-4.bg-light
+      .container
+        .row
+          .col-md-3 
+            a(href="#" data-toggle="modal" data-target="#addPostModal").btn.btn-primary.btn-block
+              i.fas.fa-plus
+              span.px-2 Add Post
+          .col-md-3 
+            a(href="#" data-toggle="modal" data-target="#addCategoryModal").btn.btn-success.btn-block
+              i.fas.fa-plus
+              span.px-2 Add Category
+          .col-md-3 
+            a(href="#" data-toggle="modal" data-target="#addUserModal").btn.btn-warning.btn-block
+              i.fas.fa-plus
+              span.px-2 Add User
+
+    .modal.fade#addPostModal
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header.bg-primary.text-white
+            h5.modal-title Add Post
+            button.close(data-dismiss="modal")
+              span &times;
+          .container.p-3
+            .model-body
+              form(action="")
+                .form-group
+                  label(for="category") Category
+                  select.form-control(name="")
+                    option(value="") Web Development
+                    option(value="") Tech Gadgets
+                    option(value="") Business
+                    option(value="") Health and Wellness
+                .form-group
+                  label(for="image") Upload Image
+                  .custom-file
+                    input.custom-file-input#image(type="file")
+                    label(for="image").custom-file-label Choose File
+                  small.form-text.text-muted Max Size 3mb
+                .form-group
+                  label(for="body") Body
+                  textarea(name="editor1")#editor1.form-control 
+            .model-footer: button.btn.btn-primary(data-dismiss="modal") Save Changes
+
+          

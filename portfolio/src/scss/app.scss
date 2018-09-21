@@ -1,0 +1,26 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+// $fa-font-path: "~font-awesome/fonts";
+// @import '~font-awesome/scss/font-awesome';
+@import '~bootstrap/scss/bootstrap';
+@import '~ekko-lightbox/dist/ekko-lightbox';
+
+#main-header {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .port-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.bg-black {
+  color: #fff;
+  background: black;
+}

@@ -1,0 +1,16 @@
+@import './common.scss';
+
+// Slick Carousel -  Need to tell SASS where things live
+$slick-font-path: "~slick-carousel/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "~slick-carousel/slick/" !default;
+$slick-arrow-color: white !default; 
+
+@import '~slick-carousel/slick/slick.scss';
+@import '~slick-carousel/slick/slick-theme.scss';
+
+
+
+img.about {
+    margin-top: -80px;
+}

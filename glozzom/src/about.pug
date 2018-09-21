@@ -1,0 +1,88 @@
+include includes/navbar-mixin.pug
+- var unsplash = "https://source.unsplash.com/random";
+
+doctype html  
+html(lang='en')  
+  head
+    title About Us
+  body
+    +navbar('about')
+
+    header#page-header
+      .container
+        .row
+          .col-md-8.m-auto.text-center
+            h1 About Us
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minus repellat necessitatibus soluta iusto sint laudantium sed minima. Repellendus, a.
+
+    section#about.p-5
+      .container
+        .row
+          .col-md-6
+            h1 What We Do
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sapiente facere rem, eos sit vero mollitia, quas consequuntur laboriosam repudiandae accusantium adipisci consequatur excepturi in molestias suscipit dolorum saepe. Ad praesentium et sit aliquid corrupti illum consequuntur dicta? Quidem aspernatur nesciunt reiciendis temporibus excepturi repellendus omnis quos illum quasi ea quisquam voluptatem, asperiores voluptate exercitationem laboriosam nihil cum similique facere!
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sapiente facere rem, eos sit vero mollitia, quas consequuntur laboriosam repudiandae accusantium adipisci consequatur excepturi in molestias suscipit dolorum saepe. Ad praesentium et sit aliquid corrupti illum consequuntur dicta? Quidem aspernatur nesciunt reiciendis temporibus excepturi repellendus omnis quos illum quasi ea quisquam voluptatem, asperiores voluptate exercitationem laboriosam nihil cum similique facere!
+          .col-md-6
+            img(src=unsplash + "/700x700?technology").about.img-fluid.rounded-circle.d-none.d-md-block
+
+    section#icon-boxes.p-5
+      .container
+        .row.mb-4 
+          .col-md-4
+            .card.bg-danger.text-white.text-center
+              .card-body
+                i.fa.fa-building.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+          .col-md-4
+            .card.bg-dark.text-white.text-center
+              .card-body
+                i.fa.fa-bullhorn.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+          .col-md-4
+            .card.bg-danger.text-white.text-center
+              .card-body
+                i.fa.fa-comments.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+        .row.mb-4 
+          .col-md-4
+            .card.bg-dark.text-white.text-center
+              .card-body
+                i.fas.fa-box.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+          .col-md-4
+            .card.bg-danger.text-white.text-center
+              .card-body
+                i.fa.fa-credit-card.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+          .col-md-4
+            .card.bg-dark.text-white.text-center
+              .card-body
+                i.fa.fa-coffee.fa-3x
+                h3 Sample Heading
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, mollitia!
+
+    section#testimonials.bg-dark.p-4.text-white
+      .container
+        h2.text-center Testimonials
+        .row
+          .col.text-center
+            .slider
+              div.mb-0
+                blockquote
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, porro.
+                  footer.blockquote-footer John Doe From <cite titel="Company 1"> Company 1 </cite>
+              div.mb-0
+                blockquote
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, porro.
+                  footer.blockquote-footer Sam Smith <cite titel="Company 2"> Company 2 </cite>
+              div.mb-0
+                blockquote
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, porro.
+                  footer.blockquote-footer Meghan Williams From <cite titel="Company 3"> Company 3 </cite>
+    
+    include includes/footer.pug

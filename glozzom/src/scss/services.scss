@@ -1,0 +1,17 @@
+@import './common.scss';
+
+#faq {
+    .card {
+        border: #444;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .card-body,
+    .card-header {
+        background: #333;
+    }
+}

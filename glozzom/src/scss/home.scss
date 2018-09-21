@@ -1,0 +1,41 @@
+@import './common.scss';
+@import '~ekko-lightbox/dist/ekko-lightbox';
+
+.carousel-item {
+  height: 450px;
+  background-size: cover;
+}
+.carousel-image-1 {
+  background: url('../images/image1.jpg');
+}
+.carousel-image-2 {
+  background: url('../images/image2.jpg');
+}
+.carousel-image-3 {
+  background: url('../images/image3.jpg');
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('../images/lights.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('../images/media.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}

@@ -1,0 +1,171 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Landing Page
+  body(data-spy="scroll" data-target="#main-nav" id="home")
+    nav#main-nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top
+      .container
+        a.navbar-brand(href="index.html") Loop AB
+        button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarCollapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#home") Home
+            li.nav-item
+              a.nav-link(href="#explore-head-section") Explore
+            li.nav-item
+              a.nav-link(href="#create-head-section") Create
+            li.nav-item
+              a.nav-link(href="#share-head-section") Share
+    header#home-section.text-light
+      .dark-overlay
+        .home-inner.container
+          .row
+            .col-lg-8.d-none.d-lg-block
+               h1.display-4
+                 | Build social profiles and gain #[strong profits].
+               .d-flex
+                 .p-4.align-self-start
+                   i.fa.fa-check.fa-2x
+                 .p-4.align-self-end.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium eos nisi, nihil sint dolore earum sapiente fugit unde impedit!
+               .d-flex
+                 .p-4.align-self-start
+                   i.fa.fa-check.fa-2x
+                 .p-4.align-self-end.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium eos nisi, nihil sint dolore earum sapiente fugit unde impedit!
+               .d-flex
+                 .p-4.align-self-start
+                   i.fa.fa-check.fa-2x
+                 .p-4.align-self-end.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium eos nisi, nihil sint dolore earum sapiente fugit unde impedit!
+            .col-lg-4
+              .card.bg-primary.card-form.text-center
+                .card-body
+                  .h3 Sign Up Today
+                  .p Please fill out this form to register
+                  form
+                    .form-group
+                      input.form-control.form-control-lg(type="text" placeholder="Username")
+                    .form-group
+                      input.form-control.form-control-lg(type="email" placeholder="Email")
+                    .form-group
+                      input.form-control.form-control-lg(type="password" placeholder="Password")
+                    .form-group
+                      input.form-control.form-control-lg(type="password" placeholder="Confirm Password")
+                    .input.btn.btn-outline-light.btn-block(type="submit" value="Submit") Submit
+    section#explore-head-section
+      .container
+        .row 
+          .col.text-center.py-5
+            h1.display-4 Explore
+            p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore eveniet debitis quasi iusto quisquam qui mollitia repellat, sed repudiandae quaerat voluptatibus, sunt amet delectus fuga sit repellendus velit! Totam modi delectus similique expedita mollitia!
+            a.btn.btn-outline-secondary(href="#") Find out more
+    section#explore-section.bg-light.text-muted.py-5
+      .container
+        .row
+          .col-md-6
+            img.img-fluid.mb-3.rounded-circle(src="images/explore-section1.jpg")
+          .col-md-6 
+            h3 Explore and Connect
+            p.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+              dolorum voluptatem accusamus ab repudiandae fuga exercitationem
+              placeat vero! Quos harum incidunt saepe asperiores voluptate,
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+    section#create-head-section.bg-primary
+      .container
+        .row 
+          .col.text-center.py-5
+            h1.display-4 Create
+            p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore eveniet debitis quasi iusto quisquam qui mollitia repellat, sed repudiandae quaerat voluptatibus, sunt amet delectus fuga sit repellendus velit! Totam modi delectus similique expedita mollitia!
+            a.btn.btn-outline-light(href="#") Find out more
+    section#create-section.py-5
+      .container
+        .row
+          .col-md-6.order-2
+            img.img-fluid.mb-3.rounded-circle(src="images/create-section1.jpg")
+          .col-md-6.order-1 
+            h3 Create your passion
+            p.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+              dolorum voluptatem accusamus ab repudiandae fuga exercitationem
+              placeat vero! Quos harum incidunt saepe asperiores voluptate,
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+    section#share-head-section.bg-primary
+      .container
+        .row 
+          .col.text-center.py-5
+            h1.display-4 Share
+            p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore eveniet debitis quasi iusto quisquam qui mollitia repellat, sed repudiandae quaerat voluptatibus, sunt amet delectus fuga sit repellendus velit! Totam modi delectus similique expedita mollitia!
+            a.btn.btn-outline-light(href="#") Find out more
+    section#share-section.bg-light.text-muted.py-5
+      .container
+        .row
+          .col-md-6
+            img.img-fluid.mb-3.rounded-circle(src="images/share-section1.jpg")
+          .col-md-6 
+            h3 Share what you create
+            p.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+              dolorum voluptatem accusamus ab repudiandae fuga exercitationem
+              placeat vero! Quos harum incidunt saepe asperiores voluptate,
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+            .d-flex
+              .p-4.align-self-start
+                i.fa.fa-check.fa-2x
+              .p-4.align-self-end
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nisi vel, aut iure distinctio doloribus?
+    footer#main-footer.bg-dark
+      .container
+        .row
+          .col.text-center.py-4
+            h3 LoopLAB
+            p Copyright &copy; #[span#year]
+            button.btn.btn-primary(data-toggle="modal" data-target="#contactModal") Contact
+    .modal.fade.text-dark#contactModal
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5.modal-title Contact Us
+            button.close(data-dismiss="modal")
+               span &times;
+          .modal-body
+            form(action="")
+              .form-group
+                label(for="name") Name
+                input(type="text").form-control 
+              .form-group
+                label(for="email") Email
+                input(type="email").form-control 
+              .form-group
+                label(for="message") Name
+                textarea.form-control 
+          .modal-footer
+            button.btn.btn-primary.btn-block Submit

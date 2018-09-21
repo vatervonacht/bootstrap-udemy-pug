@@ -1,0 +1,129 @@
+include includes/navbar-mixin.pug 
+
+doctype html  
+html(lang='en')  
+  head
+    // TODO - Meta and SEO stuff
+    title Make This A Configurable Title
+  body
+    +navbar('home')
+    section#showcase
+      #myCarousel.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel" data-slide-to="0")
+          li(data-target="#myCarousel" data-slide-to="1")
+          li(data-target="#myCarousel" data-slide-to="2")
+        .carousel-inner
+          .carousel-item.carousel-image-1.active
+            .container
+              .carousel-caption.d-none.d-sm-block.text-right.mb-5
+                h1.display-3 Heading One
+                p.lead Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam soluta laborum id, cupiditate aspernatur esse doloribus similique voluptate hic architecto.
+                a.btn.btn-danger.btn-lg Sign Up Now
+          .carousel-item.carousel-image-2
+            .container
+              .carousel-caption.d-none.d-sm-block.mb-5
+                h1.display-3 Heading Two
+                p.lead Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam soluta laborum id, cupiditate aspernatur esse doloribus similique voluptate hic architecto.
+                a.btn.btn-primary.btn-lg Learn More
+          .carousel-item.carousel-image-3
+            .container
+              .carousel-caption.d-none.d-sm-block.text-right.mb-5
+                h1.display-3 Heading Three
+                p.lead Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam soluta laborum id, cupiditate aspernatur esse doloribus similique voluptate hic architecto.
+                a.btn.btn-success.btn-lg Rothbard 
+          a(href="#myCarousel" data-slide="prev").carousel-control-prev
+            span.carousel-control-prev-icon
+          a(href="#myCarousel" data-slide="next").carousel-control-next
+            span.carousel-control-next-icon
+
+    section#home-icons.py-5
+      .container
+        .row
+          .col-md-4.mb-4.text-center
+            i.fa.fa-cog.fa-3x.mb-2
+            h3 Turning Gears
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quisquam!
+          .col-md-4.mb-4.text-center
+            i.fa.fa-cloud.fa-3x.mb-2
+            h3 Sending Data
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quisquam!
+          .col-md-4.mb-4.text-center
+            i.fa.fa-cart-plus.fa-3x.mb-2
+            h3 Making Money
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quisquam!
+
+    section#home-heading.p-5
+      .dark-overlay
+        .row
+          .col
+            .container.pt-5
+              h1 Are You Ready to Get Started?
+              p.d-none.d-md-block
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repudiandae, commodi eligendi voluptatem enim itaque nisi assumenda repellendus neque dolor?
+       
+    section#home-info.py-3
+      .container
+        .row
+          .col-md-6.align-self-center
+            h3 Lorem Ipsum
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tempora cupiditate officiis voluptatum iste consequuntur. Optio est laboriosam sunt itaque?
+            a.btn.btn-outline-danger.btn-lg(href="about.html") Learn More
+          .col-md-6
+            img.img-fluid(src='images/laptop.png')
+
+    section#video-play
+      .dark-overlay
+        .row
+          .col
+            .container.p-5
+              a.video(href="#", data-video="https://www.youtube.com/embed/HXBOT2ZK3Ec" data-toggle="modal" data-target="#videoModal")
+                i.fa.fa-play.fa-3x
+              h1 See What We Do.
+
+
+    section#photo-gallery
+      .container 
+        h1.text-center Photo Gallery
+        p.text-center Check out our photos
+        .row.mb-4 
+          .col-md-4
+            a(href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560")
+              img.img-fluid(src="https://source.unsplash.com/560x560")
+          .col-md-4
+            a(href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561" data-width="561")
+              img.img-fluid(src="https://source.unsplash.com/561x561")
+          .col-md-4
+            a(href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562" data-width="562")
+              img.img-fluid(src="https://source.unsplash.com/562x562")
+        .row.mb-4 
+          .col-md-4
+            a(href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery" data-height="564" data-width="564")
+              img.img-fluid(src="https://source.unsplash.com/564x564")
+          .col-md-4
+            a(href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery" data-height="565" data-width="565")
+              img.img-fluid(src="https://source.unsplash.com/565x565")
+          .col-md-4
+            a(href="https://source.unsplash.com/random/566x566" data-toggle="lightbox" data-gallery="img-gallery" data-height="566" data-width="566")
+              img.img-fluid(src="https://source.unsplash.com/566x566")
+
+    section#newsletter.text-center.p-5.bg-dark.text-white
+      .container
+        .row
+          .col
+            h1 Sign up for our newsletter!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi earum sapiente consequuntur qui neque praesentium explicabo illum accusamus voluptas?
+            form.form-inline.justify-content-center
+              input(type="text" placeholder="Enter Name").form-control.mb-2.mr-2
+              input(type="text" placeholder="Enter Email").form-control.mb-2.mr-2
+              button.btn.btn-primary.mb-2 Submit
+
+    include includes/footer.pug
+
+    .modal.fade#videoModal 
+      .modal-dialog
+        .modal-content
+          .modal-body
+            button.close(data-dismiss="modal")
+              span &times;
+            iframe(src="" frameborder="0" height="350" width="100%" allowfullscreen)

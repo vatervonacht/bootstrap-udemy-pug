@@ -1,0 +1,65 @@
+include includes/navbar-mixin.pug
+- var unsplash = "https://source.unsplash.com/random";
+
+doctype html  
+html(lang='en')  
+  head
+    title About Us
+  body
+    +navbar('blog')
+
+    header#page-header
+      .container
+        .row
+          .col-md-8.m-auto.text-center
+            h1 Read Our Blog
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minus repellat necessitatibus soluta iusto sint laudantium sed minima. Repellendus, a.
+
+    section#blog.py-5
+      .container
+        .row
+          .col
+            .card-columns
+              .card
+                img(src=unsplash+'/301x201').img-fluid.card-img-top
+                .card-body
+                h4.card-title Blog Post Two
+                small.text-muted Written by Ludwig on 7/13
+                hr
+                p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem deserunt necessitatibus libero quod eos corrupti dolorem pariatur nostrum adipisci sed, praesentium minus aliquid explicabo.
+              .card.p-3
+                blockquote.card-blockquote.card-body
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, earum!
+                  footer.blockquote-footer
+                    small.text-muted Someone famous in 
+                      span
+                        cite(title="Source Title") Source Title
+              .card
+                img(src=unsplash+'/300x200').img-fluid.card-img-top
+                .card-body
+                h4.card-title Blog Post One
+                small.text-muted Written by Murray on 7/13
+                hr
+                p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem deserunt necessitatibus libero quod eos corrupti dolorem pariatur nostrum adipisci sed, praesentium minus aliquid explicabo.
+              .card.p-3.bg-danger.text-white
+                blockquote.card-blockquote.card-body
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, omnis?
+                  footer.blockquote-footer
+                    small.text-muted.text-light Someone famous in 
+                      span
+                        cite(title="Source Title") Source Title
+              .card
+                img(src=unsplash+'/303x203').img-fluid.card-img-top
+                .card-body
+                h4.card-title Blog Post Three
+                small.text-muted Written by Hans on 7/13
+                hr
+                p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem deserunt necessitatibus libero quod eos corrupti dolorem pariatur nostrum adipisci sed, praesentium minus aliquid explicabo.
+              .card.p-3.bg-success.text-white
+                blockquote.card-blockquote.card-body
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, omnis?
+                  footer.blockquote-footer
+                    small.text-muted.text-light Someone famous in 
+                      span
+                        cite(title="Source Title") Source Title
+    include includes/footer.pug

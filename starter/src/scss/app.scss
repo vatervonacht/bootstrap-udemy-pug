@@ -1,0 +1,60 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+@import '~bootstrap/scss/bootstrap';
+
+@mixin checkbox( $bg: #fff, $color: #008ed6) {
+    .fa-check {
+      color: $color;
+      background: $bg;
+      padding: 5px;
+      border-radius: 5px;
+    }
+}
+body {
+  background: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+}
+
+// Variables
+$home-height: 700px;
+
+#home-section {
+  background: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: $home-height;
+
+ .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: $home-height;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .home-inner {
+    padding-top: 150px;
+
+    @include checkbox;
+
+    .card-form {
+      opacity: 0.8;
+    }
+  }
+}
+
+#explore-section, #share-section {
+  @include checkbox($bg: #333, $color: #fff);
+}
+#create-section {
+  @include checkbox;
+}
+
+

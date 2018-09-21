@@ -1,0 +1,23 @@
+mixin navbar(activePage)
+  - var links = [];
+  - links.push({ name: 'home',     text: 'Home',     url: 'index.html' });
+  - links.push({ name: 'about',    text: 'About',    url: 'about.html' });
+  - links.push({ name: 'services', text: 'Services', url: 'services.html' });
+  - links.push({ name: 'blog',     text: 'Blog',     url: 'blog.html' });
+  - links.push({ name: 'contact',  text: 'Contact',  url: 'contact.html' });
+
+  nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container
+      a(href="index.html").navbar-brand Glozzom
+      button.navbar-toggler(data-toggle="collapse", data-target="#navbarCollapse")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarCollapse
+        ul.navbar-nav.ml-auto.text-light
+          each link in links
+            if link.name === activePage
+              li.nav-item.active
+                a.nav-link(href=link.url)= link.text
+            else
+              li.nav-item
+                a.nav-link(href=link.url)= link.text
+              

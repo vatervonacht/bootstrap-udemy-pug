@@ -1,0 +1,126 @@
+include includes/navbar-mixin.pug
+
+doctype html  
+html(lang='en')  
+  head
+    title Services
+  body
+    +navbar('services')
+
+    header#page-header
+      .container
+        .row
+          .col-md-8.m-auto.text-center
+            h1 Our Services
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minus repellat necessitatibus soluta iusto sint laudantium sed minima. Repellendus, a.
+
+
+    section#services.py-5
+      .container
+          .row
+              .col-md-4
+                .card.text-center
+                    .card-header.bg-dark.text-white
+                      h3 Service Plan One
+                    .card-body
+                      .card-title $59.99/month
+                      p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nisi?
+                      ul.list-group
+                          li.list-group-item
+                              i.fas.fa-check Feature One
+                          li.list-group-item
+                              i.fas.fa-check Feature Two
+                          li.list-group-item
+                              i.fas.fa-check Feature Three
+                          li.list-group-item
+                              i.fas.fa-check Feature Four
+                          li.list-group-item
+                              i.fas.fa-check Feature Five
+                      a(href="#").btn.btn-danger.d-block.mt-2 Get It
+                    .card-footer.text-muted 1 Year Plan 
+              .col-md-4
+                .card.text-center
+                    .card-header.bg-dark.text-white
+                      h3 Service Plan Two
+                    .card-body
+                      .card-title $79.99/month
+                      p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nisi?
+                      ul.list-group
+                          li.list-group-item
+                              i.fas.fa-check Feature One
+                          li.list-group-item
+                              i.fas.fa-check Feature Two
+                          li.list-group-item
+                              i.fas.fa-check Feature Three
+                          li.list-group-item
+                              i.fas.fa-check Feature Four
+                          li.list-group-item
+                              i.fas.fa-check Feature Five
+                      a(href="#").btn.btn-danger.d-block.mt-2 Get It
+                    .card-footer.text-muted 2 Year Plan 
+              .col-md-4
+                .card.text-center
+                    .card-header.bg-dark.text-white
+                      h3 Service Plan Three
+                    .card-body
+                      .card-title $99.99/month
+                      p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nisi?
+                      ul.list-group
+                          li.list-group-item
+                              i.fas.fa-check Feature One
+                          li.list-group-item
+                              i.fas.fa-check Feature Two
+                          li.list-group-item
+                              i.fas.fa-check Feature Three
+                          li.list-group-item
+                              i.fas.fa-check Feature Four
+                          li.list-group-item
+                              i.fas.fa-check Feature Five
+                      a(href="#").btn.btn-danger.d-block.mt-2 Get It
+                    .card-footer.text-muted 3 Year Plan 
+    section#faq.p-5.bg-dark.text-white
+      .container
+        h1.text-center Frequently Asked Questions
+        hr
+        .row
+          .col-md-6
+            #accordion
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseFour" data-toggle="collapse" data-parent="#accordion") Question 4
+                    #collapseFour.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseFive" data-toggle="collapse" data-parent="#accordion") Question 5
+                    #collapseFive.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseSix" data-toggle="collapse" data-parent="#accordion") Question 6
+                    #collapseSix.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+          .col-md-6
+            #accordion
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseOne" data-toggle="collapse" data-parent="#accordion") Question 1
+                    #collapseOne.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseTwo" data-toggle="collapse" data-parent="#accordion") Question 2
+                    #collapseTwo.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+              .card
+                  .card-header
+                    h5.mb-0
+                      a(href="#collapseThree" data-toggle="collapse" data-parent="#accordion") Question 3
+                    #collapseThree.collapse
+                      .card-body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur facilis sequi ut voluptate voluptatem magni aspernatur, eum tempora iure ratione asperiores rem eligendi. Provident eius corporis vel voluptatem saepe delectus eos vitae, dignissimos ea error tempora, nihil impedit exercitationem.
+    include includes/footer.pug
